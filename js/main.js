@@ -18,9 +18,6 @@ $(document).ready(function() {
     'border-top-width': 50,
     'top': 80
   }
-
-  var topOpenClass = 'triangle js-triangle-top triangle-top-open';
-  var topClosedClass = 'triangle js-triangle-top triangle-top';
   
   /* CSS and classes for the left triangle */
   var leftOpening = {
@@ -38,8 +35,6 @@ $(document).ready(function() {
     'border-left-width': 50,
     'left': 80
   }
-  var leftOpenClass = 'triangle js-triangle-left triangle-left-open';
-  var leftClosedClass = 'triangle js-triangle-left triangle-left';
   
   /* CSS and classes for the bottom triangle */
   var bottomOpening = {
@@ -56,8 +51,6 @@ $(document).ready(function() {
     'border-bottom-width': 50,
     'top': 130
   }
-  var bottomOpenClass = 'triangle js-triangle-bottom triangle-bottom-open';
-  var bottomClosedClass = 'triangle js-triangle-bottom triangle-bottom';
 
 /* CSS and classes for the right triangle */
    var rightOpening = {
@@ -74,9 +67,6 @@ $(document).ready(function() {
     'border-right-width': 50,
     'left': 130
   }
-  var rightOpenClass = 'triangle js-triangle-right triangle-right-open';
-  var rightClosedClass = 'triangle js-triangle-right triangle-right';
-
   
   /*
     animateTriangle animates the opening and closing of the triangle
@@ -107,19 +97,55 @@ $(document).ready(function() {
     }
   }
 
+  var getOpenClass = (side) => {
+    return `triangle js-triangle-${side} triangle-${side}-open`;
+  }
+
+  var getClosedClass = (side) => {
+    return `triangle js-triangle-${side} triangle-${side}`;
+  }
+
   $('.js-triangle-top').click(
-    animateTriangle(topOpening, topOpening2, topClosing, topClosing2, topOpenClass, topClosedClass)
+    animateTriangle(
+      topOpening, 
+      topOpening2, 
+      topClosing, 
+      topClosing2, 
+      getOpenClass('top'), 
+      getClosedClass('top')
+    )
   ).end();
   
   $('.js-triangle-left').click(
-    animateTriangle(leftOpening, leftOpening2, leftClosing, leftClosing2, leftOpenClass, leftClosedClass)
+    animateTriangle(
+      leftOpening, 
+      leftOpening2, 
+      leftClosing, 
+      leftClosing2, 
+      getOpenClass('left'), 
+      getClosedClass('left')
+    )
   ).end();
   
   $('.js-triangle-bottom').click(
-    animateTriangle(bottomOpening, bottomOpening2, bottomClosing, bottomClosing2, bottomOpenClass, bottomClosedClass)
+    animateTriangle(
+      bottomOpening, 
+      bottomOpening2, 
+      bottomClosing, 
+      bottomClosing2, 
+      getOpenClass('bottom'), 
+      getClosedClass('bottom')
+    )
   ).end();
 
   $('.js-triangle-right').click(
-    animateTriangle(rightOpening, rightOpening2, rightClosing, rightClosing2, rightOpenClass, rightClosedClass)
+    animateTriangle(
+      rightOpening, 
+      rightOpening2, 
+      rightClosing, 
+      rightClosing2, 
+      getOpenClass('right'), 
+      getClosedClass('right')
+    )
   ).end();
 })
