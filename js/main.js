@@ -18,8 +18,9 @@ $(document).ready(function() {
     'border-top-width': 50,
     'top': 80
   }
-  var topOpenClass = 'js-triangle-top triangle-top-open';
-  var topClosedClass = 'js-triangle-top triangle-top';
+
+  var topOpenClass = 'triangle js-triangle-top triangle-top-open';
+  var topClosedClass = 'triangle js-triangle-top triangle-top';
   
   /* CSS and classes for the left triangle */
   var leftOpening = {
@@ -37,8 +38,8 @@ $(document).ready(function() {
     'border-left-width': 50,
     'left': 80
   }
-  var leftOpenClass = 'js-triangle-left triangle-left-open';
-  var leftClosedClass = 'js-triangle-left triangle-left';
+  var leftOpenClass = 'triangle js-triangle-left triangle-left-open';
+  var leftClosedClass = 'triangle js-triangle-left triangle-left';
   
   /* CSS and classes for the bottom triangle */
   var bottomOpening = {
@@ -55,8 +56,8 @@ $(document).ready(function() {
     'border-bottom-width': 50,
     'top': 130
   }
-  var bottomOpenClass = 'js-triangle-bottom triangle-bottom-open';
-  var bottomClosedClass = 'js-triangle-bottom triangle-bottom';
+  var bottomOpenClass = 'triangle js-triangle-bottom triangle-bottom-open';
+  var bottomClosedClass = 'triangle js-triangle-bottom triangle-bottom';
 
 /* CSS and classes for the right triangle */
    var rightOpening = {
@@ -73,8 +74,8 @@ $(document).ready(function() {
     'border-right-width': 50,
     'left': 130
   }
-  var rightOpenClass = 'js-triangle-right triangle-right-open';
-  var rightClosedClass = 'js-triangle-right triangle-right';
+  var rightOpenClass = 'triangle js-triangle-right triangle-right-open';
+  var rightClosedClass = 'triangle js-triangle-right triangle-right';
 
   
   /*
@@ -105,7 +106,7 @@ $(document).ready(function() {
       }
     }
   }
-  
+
   $('.js-triangle-top').click(
     animateTriangle(topOpening, topOpening2, topClosing, topClosing2, topOpenClass, topClosedClass)
   ).end();
