@@ -1,0 +1,99 @@
+.container {
+    position: relative;
+}
+
+.background {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    background-color: cyan;
+}
+
+.triangle-top {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 50px 0 50px;
+    border-color: #007bff transparent transparent transparent;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+
+.triangle-top-open {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 0px 50px;
+    border-color: transparent transparent #007bff transparent;  
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 50px 50px;
+    border-color: transparent transparent transparent #ff00a6;
+    position: absolute;
+    top: 80px;
+    left: 80px;  
+}
+
+.triangle-left-open {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 28px 50px 0;
+    border-color: transparent #ff00a6 transparent transparent;
+    position: absolute;
+    top: 80px;
+    left: 50px;   
+}
+
+.triangle-bottom {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 50px;
+    border-color: transparent transparent #524533 transparent;  
+    position: absolute;
+    top: 130px;
+    left: 80px;
+}
+
+.triangle-bottom-open {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 50px 0 50px;
+    border-color: #524533 transparent transparent transparent;    position: absolute;
+    top: 220px;
+    left: 80px;   
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 50px 50px 0;
+    border-color: transparent #ff4858 transparent transparent;
+    position: absolute;
+    top: 80px;
+    left: 130px;
+}
+
+.triangle-right-open {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 50px 50px;
+    border-color: transparent transparent transparent #ff4858;
+    position: absolute;
+    top: 80px;
+    left: 80px;  
+}
