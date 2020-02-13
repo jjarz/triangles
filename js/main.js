@@ -1,22 +1,25 @@
 $(document).ready(function() {
   var duration = 100;
   var easing = 'linear';
+
+  var triangleSize = 100;
+  var offset = 80;
   
   /* CSS and classes for the top triangle*/
   var topOpening = {
     'border-top-width': 0
   }
   var topOpening2 = {
-    'border-bottom-width': 50,
-    'top': 30  
+    'border-bottom-width': triangleSize,
+    'top': offset - triangleSize
   }
   var topClosing = {
     'border-bottom-width': 0,
-    'top': 80  
+    'top': offset  
   }
   var topClosing2 = {
-    'border-top-width': 50,
-    'top': 80
+    'border-top-width': triangleSize,
+    'top': offset
   }
   
   /* CSS and classes for the left triangle */
@@ -24,16 +27,16 @@ $(document).ready(function() {
     'border-left-width': 0
   }
   var leftOpening2 = {
-    'border-right-width': 50,
+    'border-right-width': triangleSize,
     'left': 30  
   }
   var leftClosing = {
     'border-right-width': 0,
-    'left': 80  
+    'left': offset  
   }
   var leftClosing2 = {
-    'border-left-width': 50,
-    'left': 80
+    'border-left-width': triangleSize,
+    'left': offset
   }
   
   /* CSS and classes for the bottom triangle */
@@ -42,13 +45,13 @@ $(document).ready(function() {
     'top': 180
   }
   var bottomOpening2 = {
-    'border-top-width': 50
+    'border-top-width': triangleSize
   }
   var bottomClosing = {
     'border-top-width': 0
   }
   var bottomClosing2 = {
-    'border-bottom-width': 50,
+    'border-bottom-width': triangleSize,
     'top': 130
   }
 
@@ -58,13 +61,13 @@ $(document).ready(function() {
     'left': 180  
   }
   var rightOpening2 = {
-    'border-left-width': 50,
+    'border-left-width': triangleSize,
   }
   var rightClosing = {
     'border-left-width': 0
   }
   var rightClosing2 = {
-    'border-right-width': 50,
+    'border-right-width': triangleSize,
     'left': 130
   }
   

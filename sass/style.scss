@@ -1,16 +1,17 @@
-$triangleWidth: 50px;
+$triangleSize: 100px;
+$offset: 80px;
 
 .container {
     position: relative;
 }
 
 .background {
-    width: 100px;
-    height: 100px;
+    width: $triangleSize * 2;
+    height: $triangleSize * 2;
     position: absolute;
-    top: 80px;
-    left: 80px;
-    background-color: cyan;
+    top: $offset;
+    left: $offset;
+    background-color: black;
 }
 
 .triangle {
@@ -20,64 +21,66 @@ $triangleWidth: 50px;
 }
 
 .triangle-top {
-    border-width: $triangleWidth 50px 0 50px;
+    border-width: $triangleSize $triangleSize 0 $triangleSize;
     border-color: #007bff transparent transparent transparent;
     position: absolute;
-    top: 80px;
-    left: 80px;
+    top: $offset;
+    left: $offset;
 }
 
 .triangle-top-open {
-    border-width: 0 50px 0px 50px;
+    border-width: 0 $triangleSize 0px $triangleSize;
     border-color: transparent transparent #007bff transparent;  
     position: absolute;
-    top: 80px;
-    left: 80px;
+    top: $offset;
+    left: $offset;
 }
 
 .triangle-left {
-    border-width: 50px 0 50px 50px;
+    border-width: $triangleSize 0 $triangleSize $triangleSize;
     border-color: transparent transparent transparent #ff00a6;
     position: absolute;
-    top: 80px;
-    left: 80px;  
+    top: $offset;
+    left: $offset;  
 }
 
 .triangle-left-open {
-    border-width: 50px 28px 50px 0;
+    border-width: $triangleSize 28px $triangleSize 0;
     border-color: transparent #ff00a6 transparent transparent;
     position: absolute;
-    top: 80px;
-    left: 50px;   
+    top: $offset;
+    left: $triangleSize;   
 }
 
 .triangle-bottom {
-    border-width: 0 50px 50px 50px;
+    border-width: 0 $triangleSize $triangleSize $triangleSize;
     border-color: transparent transparent #524533 transparent;  
     position: absolute;
-    top: 130px;
-    left: 80px;
+    top: $offset + $triangleSize;
+    left: $offset;
 }
 
 .triangle-bottom-open {
-    border-width: 0px 50px 0 50px;
+    border-width: 0px $triangleSize 0 $triangleSize;
     border-color: #524533 transparent transparent transparent;    position: absolute;
+    // top: $offset + 
     top: 220px;
-    left: 80px;   
+    left: $offset;   
 }
 
 .triangle-right {
-    border-width: 50px 50px 50px 0;
+    border-width: $triangleSize $triangleSize $triangleSize 0;
     border-color: transparent #ff4858 transparent transparent;
     position: absolute;
-    top: 80px;
-    left: 130px;
+    top: $offset;
+    left: $offset + $triangleSize;
+    // left: 130px;
 }
 
 .triangle-right-open {
-    border-width: 50px 0 50px 50px;
+    border-width: $triangleSize 0 $triangleSize $triangleSize;
     border-color: transparent transparent transparent #ff4858;
     position: absolute;
-    top: 80px;
-    left: 80px;  
+    top: $offset;
+    left: $offset;  
 }
