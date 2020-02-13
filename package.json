@@ -1,0 +1,23 @@
+{
+  "name": "triangles",
+  "version": "1.0.0",
+  "description": "triangle animation",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjarz/triangles.git"
+  },
+  "author": "Julie Jarzemsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjarz/triangles/issues"
+  },
+  "homepage": "https://github.com/jjarz/triangles#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
