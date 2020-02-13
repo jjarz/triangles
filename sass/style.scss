@@ -1,3 +1,5 @@
+$triangleWidth: 50px;
+
 .container {
     position: relative;
 }
@@ -18,7 +20,7 @@
 }
 
 .triangle-top {
-    border-width: 50px 50px 0 50px;
+    border-width: $triangleWidth 50px 0 50px;
     border-color: #007bff transparent transparent transparent;
     position: absolute;
     top: 80px;
