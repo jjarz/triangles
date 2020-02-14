@@ -2,12 +2,12 @@
   position: relative; }
 
 .background {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   position: absolute;
-  top: 80px;
-  left: 80px;
-  background-color: cyan; }
+  top: 200px;
+  left: 200px;
+  background-color: black; }
 
 .triangle {
   width: 0;
@@ -15,57 +15,57 @@
   border-style: solid; }
 
 .triangle-top {
-  border-width: 100px 100px 0 100px;
+  border-width: 200px 200px 0 200px;
   border-color: #007bff transparent transparent transparent;
   position: absolute;
-  top: 80px;
-  left: 80px; }
+  top: 200px;
+  left: 200px; }
 
 .triangle-top-open {
-  border-width: 0 100px 0px 100px;
+  border-width: 0 200px 0px 200px;
   border-color: transparent transparent #007bff transparent;
   position: absolute;
-  top: 80px;
-  left: 80px; }
+  top: 200px;
+  left: 200px; }
 
 .triangle-left {
-  border-width: 100px 0 100px 100px;
+  border-width: 200px 0 200px 200px;
   border-color: transparent transparent transparent #ff00a6;
   position: absolute;
-  top: 80px;
-  left: 80px; }
+  top: 200px;
+  left: 200px; }
 
 .triangle-left-open {
-  border-width: 100px 28px 100px 0;
+  border-width: 200px 28px 200px 0;
   border-color: transparent #ff00a6 transparent transparent;
   position: absolute;
-  top: 80px;
-  left: 100px; }
+  top: 200px;
+  left: 200px; }
 
 .triangle-bottom {
-  border-width: 0 100px 100px 100px;
+  border-width: 0 200px 200px 200px;
   border-color: transparent transparent #524533 transparent;
   position: absolute;
-  top: 180px;
-  left: 80px; }
+  top: 400px;
+  left: 200px; }
 
 .triangle-bottom-open {
-  border-width: 0px 100px 0 100px;
+  border-width: 0px 200px 0 200px;
   border-color: #524533 transparent transparent transparent;
   position: absolute;
   top: 220px;
-  left: 80px; }
+  left: 200px; }
 
 .triangle-right {
-  border-width: 100px 100px 100px 0;
+  border-width: 200px 200px 200px 0;
   border-color: transparent #ff4858 transparent transparent;
   position: absolute;
-  top: 80px;
-  left: 180px; }
+  top: 200px;
+  left: 400px; }
 
 .triangle-right-open {
-  border-width: 100px 0 100px 100px;
+  border-width: 200px 0 200px 200px;
   border-color: transparent transparent transparent #ff4858;
   position: absolute;
-  top: 80px;
-  left: 80px; }
+  top: 200px;
+  left: 200px; }

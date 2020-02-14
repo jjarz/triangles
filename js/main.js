@@ -2,8 +2,8 @@ $(document).ready(function() {
   var duration = 100;
   var easing = 'linear';
 
-  var triangleSize = 100;
-  var offset = 80;
+  var triangleSize = 200;
+  var offset = 200;
   
   /* CSS and classes for the top triangle*/
   var topOpening = {
@@ -28,7 +28,7 @@ $(document).ready(function() {
   }
   var leftOpening2 = {
     'border-right-width': triangleSize,
-    'left': 30  
+    'left': offset - triangleSize  
   }
   var leftClosing = {
     'border-right-width': 0,
@@ -42,7 +42,7 @@ $(document).ready(function() {
   /* CSS and classes for the bottom triangle */
   var bottomOpening = {
     'border-bottom-width': 0,
-    'top': 180
+    'top': triangleSize * 2 + offset
   }
   var bottomOpening2 = {
     'border-top-width': triangleSize
@@ -52,13 +52,13 @@ $(document).ready(function() {
   }
   var bottomClosing2 = {
     'border-bottom-width': triangleSize,
-    'top': 130
+    'top': triangleSize + offset
   }
 
 /* CSS and classes for the right triangle */
    var rightOpening = {
     'border-right-width': 0,
-    'left': 180  
+    'left': triangleSize * 2 + offset
   }
   var rightOpening2 = {
     'border-left-width': triangleSize,
@@ -68,7 +68,7 @@ $(document).ready(function() {
   }
   var rightClosing2 = {
     'border-right-width': triangleSize,
-    'left': 130
+    'left': triangleSize + offset
   }
   
   /*
